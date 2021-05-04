@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1269418379\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1475440116\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">25 methods, 3 failed,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_enters_an_invalid">user_enters_an_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_enters_invalid">user_enters_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_enters_valid">user_enters_valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +126,52 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="openBrowser">openBrowser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="clicks_on_login">clicks_on_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="close_browser">close_browser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="close_the_browser">close_the_browser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="enters_registered_email_id">enters_registered_email_id</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="enters_unregistered_mail_id">enters_unregistered_mail_id</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="error_message_displayed">error_message_displayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="error_message_is_displayed">error_message_is_displayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_clicks_login">user_clicks_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_clicks_login_button">user_clicks_login_button</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_clicks_on_continue_with_email_link">user_clicks_on_continue_with_email_link</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -112,12 +181,57 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_clicks_on_submit">user_clicks_on_submit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_enters_valid_phone_number">user_enters_valid_phone_number</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_gets_textfield_to_enter_phone_number">user_gets_textfield_to_enter_phone_number</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_is_displayed_OTP_sent_message">user_is_displayed_OTP_sent_message</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_is_on_Enter_OTP_page">user_is_on_Enter_OTP_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_is_on_Login_page">user_is_on_Login_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_is_on_login_page">user_is_on_login_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_is_on_unacademy_home_page">user_is_on_unacademy_home_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_redirected_to_enter_OTP">user_redirected_to_enter_OTP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_selects_India_country_code">user_selects_India_country_code</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="stepDefinition.logingUnacademy" class="method navigator-link" hash-for-method="user_selects_non_India_country_code">user_selects_non_India_country_code</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,6 +246,122 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">stepDefinition.logingUnacademy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_enters_an_invalid">
+                  </a> <!-- user_enters_an_invalid -->
+                  <span class="method-name">user_enters_an_invalid</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [user_enters_an_invalid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_enters_invalid">
+                  </a> <!-- user_enters_invalid -->
+                  <span class="method-name">user_enters_invalid</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [user_enters_invalid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_enters_valid">
+                  </a> <!-- user_enters_valid -->
+                  <span class="method-name">user_enters_valid</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [user_enters_valid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -140,9 +370,72 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openBrowser">
-                  </a> <!-- openBrowser -->
-                  <span class="method-name">openBrowser</span>
+                  <a name="clicks_on_login">
+                  </a> <!-- clicks_on_login -->
+                  <span class="method-name">clicks_on_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="close_browser">
+                  </a> <!-- close_browser -->
+                  <span class="method-name">close_browser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="close_the_browser">
+                  </a> <!-- close_the_browser -->
+                  <span class="method-name">close_the_browser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enters_registered_email_id">
+                  </a> <!-- enters_registered_email_id -->
+                  <span class="method-name">enters_registered_email_id</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enters_unregistered_mail_id">
+                  </a> <!-- enters_unregistered_mail_id -->
+                  <span class="method-name">enters_unregistered_mail_id</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="error_message_displayed">
+                  </a> <!-- error_message_displayed -->
+                  <span class="method-name">error_message_displayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="error_message_is_displayed">
+                  </a> <!-- error_message_is_displayed -->
+                  <span class="method-name">error_message_is_displayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_clicks_login">
+                  </a> <!-- user_clicks_login -->
+                  <span class="method-name">user_clicks_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_clicks_login_button">
+                  </a> <!-- user_clicks_login_button -->
+                  <span class="method-name">user_clicks_login_button</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_clicks_on_continue_with_email_link">
+                  </a> <!-- user_clicks_on_continue_with_email_link -->
+                  <span class="method-name">user_clicks_on_continue_with_email_link</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -154,9 +447,51 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="user_clicks_on_submit">
+                  </a> <!-- user_clicks_on_submit -->
+                  <span class="method-name">user_clicks_on_submit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_enters_valid_phone_number">
+                  </a> <!-- user_enters_valid_phone_number -->
+                  <span class="method-name">user_enters_valid_phone_number</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="user_gets_textfield_to_enter_phone_number">
                   </a> <!-- user_gets_textfield_to_enter_phone_number -->
                   <span class="method-name">user_gets_textfield_to_enter_phone_number</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_is_displayed_OTP_sent_message">
+                  </a> <!-- user_is_displayed_OTP_sent_message -->
+                  <span class="method-name">user_is_displayed_OTP_sent_message</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_is_on_Enter_OTP_page">
+                  </a> <!-- user_is_on_Enter_OTP_page -->
+                  <span class="method-name">user_is_on_Enter_OTP_page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_is_on_Login_page">
+                  </a> <!-- user_is_on_Login_page -->
+                  <span class="method-name">user_is_on_Login_page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_is_on_login_page">
+                  </a> <!-- user_is_on_login_page -->
+                  <span class="method-name">user_is_on_login_page</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -166,19 +501,40 @@
                   <span class="method-name">user_is_on_unacademy_home_page</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_redirected_to_enter_OTP">
+                  </a> <!-- user_redirected_to_enter_OTP -->
+                  <span class="method-name">user_redirected_to_enter_OTP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_selects_India_country_code">
+                  </a> <!-- user_selects_India_country_code -->
+                  <span class="method-name">user_selects_India_country_code</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_selects_non_India_country_code">
+                  </a> <!-- user_selects_non_India_country_code -->
+                  <span class="method-name">user_selects_non_India_country_code</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1269418379\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1475440116\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;stepDefinition.logingUnacademy&quot;/&gt;
     &lt;/classes&gt;
@@ -220,28 +576,112 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(25);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openBrowser')
+data.setCell(0, 1, 'user_is_on_unacademy_home_page')
 data.setCell(0, 2, 'stepDefinition.logingUnacademy')
-data.setCell(0, 3, 8353);
+data.setCell(0, 3, 13408);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'user_is_on_unacademy_home_page')
+data.setCell(1, 1, 'user_gets_textfield_to_enter_phone_number')
 data.setCell(1, 2, 'stepDefinition.logingUnacademy')
-data.setCell(1, 3, 3017);
+data.setCell(1, 3, 10518);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'user_clicks_on_login_button')
 data.setCell(2, 2, 'stepDefinition.logingUnacademy')
-data.setCell(2, 3, 2288);
+data.setCell(2, 3, 2215);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'user_gets_textfield_to_enter_phone_number')
+data.setCell(3, 1, 'clicks_on_login')
 data.setCell(3, 2, 'stepDefinition.logingUnacademy')
-data.setCell(3, 3, 308);
+data.setCell(3, 3, 10);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'user_is_on_Login_page')
+data.setCell(4, 2, 'stepDefinition.logingUnacademy')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'error_message_displayed')
+data.setCell(5, 2, 'stepDefinition.logingUnacademy')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'user_clicks_login')
+data.setCell(6, 2, 'stepDefinition.logingUnacademy')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'user_is_displayed_OTP_sent_message')
+data.setCell(7, 2, 'stepDefinition.logingUnacademy')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'error_message_is_displayed')
+data.setCell(8, 2, 'stepDefinition.logingUnacademy')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'enters_unregistered_mail_id')
+data.setCell(9, 2, 'stepDefinition.logingUnacademy')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'close_browser')
+data.setCell(10, 2, 'stepDefinition.logingUnacademy')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'user_is_on_login_page')
+data.setCell(11, 2, 'stepDefinition.logingUnacademy')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'user_is_on_Enter_OTP_page')
+data.setCell(12, 2, 'stepDefinition.logingUnacademy')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'user_selects_India_country_code')
+data.setCell(13, 2, 'stepDefinition.logingUnacademy')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'user_selects_non_India_country_code')
+data.setCell(14, 2, 'stepDefinition.logingUnacademy')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'user_clicks_on_submit')
+data.setCell(15, 2, 'stepDefinition.logingUnacademy')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'user_clicks_login_button')
+data.setCell(16, 2, 'stepDefinition.logingUnacademy')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'user_redirected_to_enter_OTP')
+data.setCell(17, 2, 'stepDefinition.logingUnacademy')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'user_clicks_on_continue_with_email_link')
+data.setCell(18, 2, 'stepDefinition.logingUnacademy')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'close_the_browser')
+data.setCell(19, 2, 'stepDefinition.logingUnacademy')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'enters_registered_email_id')
+data.setCell(20, 2, 'stepDefinition.logingUnacademy')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'user_enters_valid_phone_number')
+data.setCell(21, 2, 'stepDefinition.logingUnacademy')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'user_enters_invalid')
+data.setCell(22, 2, 'stepDefinition.logingUnacademy')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'user_enters_valid')
+data.setCell(23, 2, 'stepDefinition.logingUnacademy')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'user_enters_an_invalid')
+data.setCell(24, 2, 'stepDefinition.logingUnacademy')
+data.setCell(24, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,20 +709,92 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">stepDefinition.logingUnacademy</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">openBrowser</span>
+                <span class="method-name">clicks_on_login</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">user_clicks_on_login_button</span>
-                <span class="method-start">8356 ms</span>
+                <span class="method-name">close_browser</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">user_gets_textfield_to_enter_phone_number</span>
-                <span class="method-start">10652 ms</span>
+                <span class="method-name">close_the_browser</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enters_registered_email_id</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enters_unregistered_mail_id</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">error_message_displayed</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">error_message_is_displayed</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_clicks_login</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_clicks_login_button</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_clicks_on_continue_with_email_link</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_clicks_on_submit</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_enters_valid_phone_number</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_is_displayed_OTP_sent_message</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_is_on_Enter_OTP_page</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_is_on_Login_page</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_is_on_login_page</span>
+                <span class="method-start">99 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_redirected_to_enter_OTP</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_selects_India_country_code</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_selects_non_India_country_code</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">user_is_on_unacademy_home_page</span>
-                <span class="method-start">10964 ms</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_clicks_on_login_button</span>
+                <span class="method-start">13524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">user_gets_textfield_to_enter_phone_number</span>
+                <span class="method-start">15740 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

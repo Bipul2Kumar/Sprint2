@@ -1,28 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="25" passed="22" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-02T16:05:07Z" name="Default suite" finished-at="2021-05-02T16:05:21Z" duration-ms="14024">
+  <suite started-at="2021-05-04T09:36:21Z" name="Default suite" finished-at="2021-05-04T09:36:47Z" duration-ms="26291">
     <groups>
     </groups>
-    <test started-at="2021-05-02T16:05:07Z" name="Default test" finished-at="2021-05-02T16:05:21Z" duration-ms="14024">
+    <test started-at="2021-05-04T09:36:21Z" name="Default test" finished-at="2021-05-04T09:36:47Z" duration-ms="26291">
       <class name="stepDefinition.logingUnacademy">
-        <test-method signature="openBrowser()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:07Z" name="openBrowser" finished-at="2021-05-02T21:35:15Z" duration-ms="8353" status="PASS">
+        <test-method signature="clicks_on_login()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="clicks_on_login" finished-at="2021-05-04T09:36:21Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="user_clicks_on_login_button()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:15Z" name="user_clicks_on_login_button" finished-at="2021-05-02T21:35:18Z" duration-ms="2288" status="PASS">
+        </test-method> <!-- clicks_on_login -->
+        <test-method signature="close_browser()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="close_browser" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_clicks_on_login_button -->
-        <test-method signature="user_gets_textfield_to_enter_phone_number()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:18Z" name="user_gets_textfield_to_enter_phone_number" finished-at="2021-05-02T21:35:18Z" duration-ms="308" status="PASS">
+        </test-method> <!-- close_browser -->
+        <test-method signature="close_the_browser()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="close_the_browser" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_gets_textfield_to_enter_phone_number -->
-        <test-method signature="user_is_on_unacademy_home_page()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:18Z" name="user_is_on_unacademy_home_page" finished-at="2021-05-02T21:35:21Z" duration-ms="3017" status="PASS">
+        </test-method> <!-- close_the_browser -->
+        <test-method signature="enters_registered_email_id()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="enters_registered_email_id" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enters_registered_email_id -->
+        <test-method signature="enters_unregistered_mail_id()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="enters_unregistered_mail_id" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enters_unregistered_mail_id -->
+        <test-method signature="error_message_displayed()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="error_message_displayed" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- error_message_displayed -->
+        <test-method signature="error_message_is_displayed()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="error_message_is_displayed" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- error_message_is_displayed -->
+        <test-method signature="user_clicks_login()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_clicks_login" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_login -->
+        <test-method signature="user_clicks_login_button()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_clicks_login_button" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_login_button -->
+        <test-method signature="user_clicks_on_continue_with_email_link()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_clicks_on_continue_with_email_link" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_continue_with_email_link -->
+        <test-method signature="user_clicks_on_submit()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_clicks_on_submit" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_submit -->
+        <test-method signature="user_enters_an_invalid(java.lang.String)[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_enters_an_invalid" finished-at="2021-05-04T09:36:21Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [user_enters_an_invalid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [user_enters_an_invalid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_enters_an_invalid -->
+        <test-method signature="user_enters_invalid(java.lang.String)[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_enters_invalid" finished-at="2021-05-04T09:36:21Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [user_enters_invalid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [user_enters_invalid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_enters_invalid -->
+        <test-method signature="user_enters_valid(java.lang.String)[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_enters_valid" finished-at="2021-05-04T09:36:21Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [user_enters_valid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [user_enters_valid] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_enters_valid -->
+        <test-method signature="user_enters_valid_phone_number()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_enters_valid_phone_number" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_enters_valid_phone_number -->
+        <test-method signature="user_is_displayed_OTP_sent_message()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_is_displayed_OTP_sent_message" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_displayed_OTP_sent_message -->
+        <test-method signature="user_is_on_Enter_OTP_page()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_is_on_Enter_OTP_page" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_on_Enter_OTP_page -->
+        <test-method signature="user_is_on_Login_page()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_is_on_Login_page" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_on_Login_page -->
+        <test-method signature="user_is_on_login_page()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_is_on_login_page" finished-at="2021-05-04T09:36:21Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_on_login_page -->
+        <test-method signature="user_redirected_to_enter_OTP()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_redirected_to_enter_OTP" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_redirected_to_enter_OTP -->
+        <test-method signature="user_selects_India_country_code()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_selects_India_country_code" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_selects_India_country_code -->
+        <test-method signature="user_selects_non_India_country_code()[pri:0, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_selects_non_India_country_code" finished-at="2021-05-04T09:36:21Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_selects_non_India_country_code -->
+        <test-method signature="user_is_on_unacademy_home_page()[pri:1, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:21Z" name="user_is_on_unacademy_home_page" finished-at="2021-05-04T09:36:34Z" duration-ms="13408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_is_on_unacademy_home_page -->
+        <test-method signature="user_clicks_on_login_button()[pri:2, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:34Z" name="user_clicks_on_login_button" finished-at="2021-05-04T09:36:37Z" duration-ms="2215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_login_button -->
+        <test-method signature="user_gets_textfield_to_enter_phone_number()[pri:3, instance:stepDefinition.logingUnacademy@5db250b4]" started-at="2021-05-04T09:36:37Z" name="user_gets_textfield_to_enter_phone_number" finished-at="2021-05-04T09:36:47Z" duration-ms="10518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_gets_textfield_to_enter_phone_number -->
       </class> <!-- stepDefinition.logingUnacademy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
