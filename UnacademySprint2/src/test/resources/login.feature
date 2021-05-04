@@ -34,7 +34,7 @@ Scenario Outline: Verification of valid phone number inputs
 		|8584994347|
 		
 
-@fifth
+@fourth
 Scenario: Successful Verification of phone number field
 	Given User is on login page
 	When User enters valid phone number 
@@ -42,7 +42,7 @@ Scenario: Successful Verification of phone number field
 	Then User is displayed OTP sent message
 	Then close the browser
 	
-@sixth
+@fifth
 Scenario Outline: Verification of invalid OTP
 	Given User is on Enter OTP page
 	When User enters an invalid "<OTP>" 
@@ -54,7 +54,7 @@ Scenario Outline: Verification of invalid OTP
 	|6228|
 	|622878654|
 	
-@seventh
+@sixth
 Scenario: Unsuccessful login with unregistered email id
 	Given User is on Login page
 	When User clicks on continue with email link
@@ -63,7 +63,7 @@ Scenario: Unsuccessful login with unregistered email id
 	Then error message is displayed
 	Then close browser
 	
-@eight
+@seventh
 Scenario: Registered email id
 	Given User is on Login page
 	When User clicks on continue with email link
