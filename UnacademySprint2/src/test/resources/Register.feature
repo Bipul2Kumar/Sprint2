@@ -21,7 +21,7 @@ Scenario Outline: Verification of phone number field with invalid inputs
 		|0000000000|
 
 
-@fourth
+@third
 Scenario Outline: Verification of phone number field with invalid inputs
 	Given User is on registration page
 	When User selects non-India country code
@@ -34,7 +34,7 @@ Scenario Outline: Verification of phone number field with invalid inputs
 		|213436550567890|
 		|21343|
 		
-@fifth
+@fourth
 Scenario: Successful Verification of phone number field
 	Given User is on registration page
 	When User enters valid phone number
@@ -44,7 +44,7 @@ Scenario: Successful Verification of phone number field
 
 
 	
-@sixth
+@fifth
 Scenario Outline: Verification of invalid OTP
 	Given User is on verify OTP page
 	When User enters an invalid "<OTP>"

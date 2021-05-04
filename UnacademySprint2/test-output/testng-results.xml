@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-30T05:16:27Z" name="Default suite" finished-at="2021-04-30T05:16:27Z" duration-ms="14">
+  <suite started-at="2021-05-02T16:05:07Z" name="Default suite" finished-at="2021-05-02T16:05:21Z" duration-ms="14024">
     <groups>
     </groups>
-    <test started-at="2021-04-30T05:16:27Z" name="Default test" finished-at="2021-04-30T05:16:27Z" duration-ms="14">
+    <test started-at="2021-05-02T16:05:07Z" name="Default test" finished-at="2021-05-02T16:05:21Z" duration-ms="14024">
+      <class name="stepDefinition.logingUnacademy">
+        <test-method signature="openBrowser()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:07Z" name="openBrowser" finished-at="2021-05-02T21:35:15Z" duration-ms="8353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="user_clicks_on_login_button()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:15Z" name="user_clicks_on_login_button" finished-at="2021-05-02T21:35:18Z" duration-ms="2288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_login_button -->
+        <test-method signature="user_gets_textfield_to_enter_phone_number()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:18Z" name="user_gets_textfield_to_enter_phone_number" finished-at="2021-05-02T21:35:18Z" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_gets_textfield_to_enter_phone_number -->
+        <test-method signature="user_is_on_unacademy_home_page()[pri:0, instance:stepDefinition.logingUnacademy@5c1a8622]" started-at="2021-05-02T21:35:18Z" name="user_is_on_unacademy_home_page" finished-at="2021-05-02T21:35:21Z" duration-ms="3017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_on_unacademy_home_page -->
+      </class> <!-- stepDefinition.logingUnacademy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

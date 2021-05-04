@@ -1,4 +1,4 @@
-package runner2;
+package runner;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -7,7 +7,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         features = "src/test/resources/login.feature",glue = {"stepDefinition"})
 
-public class RunTestLogin {
+public class UnacademyTest 
+{
 
 	
 }

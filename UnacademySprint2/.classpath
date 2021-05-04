@@ -44,5 +44,6 @@
 	<classpathentry kind="lib" path="G:/SeleniumSoftware/cucumber jars-20210427T070717Z-001/cucumber jars/gherkin-2.12.2.jar"/>
 	<classpathentry kind="lib" path="G:/SeleniumSoftware/cucumber jars-20210427T070717Z-001/cucumber jars/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="G:/SeleniumSoftware/cucumber jars-20210427T070717Z-001/cucumber jars/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
