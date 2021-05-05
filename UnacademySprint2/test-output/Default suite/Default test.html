@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 04 15:06:21 IST 2021</td>
+<td>Started on:</td><td>Wed May 05 17:42:31 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26291 ms)</td>
+<tr><td>Total time:</td><td>50 seconds (50084 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='stepDefinition.logingUnacademy.user_enters_an_invalid()'><b>user_enters_an_invalid</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [user_enters_an_invalid] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+<td title='stepDefinition.logingUnacademy.user_should_enter_valid_otp()'><b>user_should_enter_valid_otp</b><br>Test class: stepDefinition.logingUnacademy</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at PageFactoryPOM.PageFactoryLogin.otpNumber(PageFactoryLogin.java:59)
+	at stepDefinition.logingUnacademy.user_should_enter_valid_otp(logingUnacademy.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -103,77 +111,25 @@ For more information on native dependency injection please refer to http://testn
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace842741472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace842741472'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [user_enters_an_invalid] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_enters_invalid()'><b>user_enters_invalid</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [user_enters_invalid] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1766505436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1766505436'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [user_enters_invalid] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1521389237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1521389237'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at PageFactoryPOM.PageFactoryLogin.otpNumber(PageFactoryLogin.java:59)
+	at stepDefinition.logingUnacademy.user_should_enter_valid_otp(logingUnacademy.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -192,68 +148,8 @@ For more information on native dependency injection please refer to http://testn
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_enters_valid()'><b>user_enters_valid</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [user_enters_valid] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1164440413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1164440413'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [user_enters_valid] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
+<td>5</td>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -263,115 +159,35 @@ For more information on native dependency injection please refer to http://testn
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='stepDefinition.logingUnacademy.clicks_on_login()'><b>clicks_on_login</b><br>Test class: stepDefinition.logingUnacademy</td>
+<td title='stepDefinition.logingUnacademy.click_on_verify_otp_button()'><b>click_on_verify_otp_button</b><br>Test class: stepDefinition.logingUnacademy</td>
+<td></td>
+<td>5</td>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
+<tr>
+<td title='stepDefinition.logingUnacademy.user_click_login_button()'><b>user_click_login_button</b><br>Test class: stepDefinition.logingUnacademy</td>
 <td></td>
 <td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
 <tr>
-<td title='stepDefinition.logingUnacademy.close_browser()'><b>close_browser</b><br>Test class: stepDefinition.logingUnacademy</td>
+<td title='stepDefinition.logingUnacademy.user_enters_registered_phone_number()'><b>user_enters_registered_phone_number</b><br>Test class: stepDefinition.logingUnacademy</td>
 <td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.close_the_browser()'><b>close_the_browser</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.enters_registered_email_id()'><b>enters_registered_email_id</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.enters_unregistered_mail_id()'><b>enters_unregistered_mail_id</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.error_message_displayed()'><b>error_message_displayed</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.error_message_is_displayed()'><b>error_message_is_displayed</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_clicks_login()'><b>user_clicks_login</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_clicks_login_button()'><b>user_clicks_login_button</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_clicks_on_continue_with_email_link()'><b>user_clicks_on_continue_with_email_link</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_clicks_on_login_button()'><b>user_clicks_on_login_button</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>2</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_clicks_on_submit()'><b>user_clicks_on_submit</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_enters_valid_phone_number()'><b>user_enters_valid_phone_number</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_gets_textfield_to_enter_phone_number()'><b>user_gets_textfield_to_enter_phone_number</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>10</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_is_displayed_OTP_sent_message()'><b>user_is_displayed_OTP_sent_message</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_is_on_Enter_OTP_page()'><b>user_is_on_Enter_OTP_page</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_is_on_Login_page()'><b>user_is_on_Login_page</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
+<td>21</td>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
 <tr>
 <td title='stepDefinition.logingUnacademy.user_is_on_login_page()'><b>user_is_on_login_page</b><br>Test class: stepDefinition.logingUnacademy</td>
 <td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
+<td>10</td>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
 <tr>
-<td title='stepDefinition.logingUnacademy.user_is_on_unacademy_home_page()'><b>user_is_on_unacademy_home_page</b><br>Test class: stepDefinition.logingUnacademy</td>
+<td title='stepDefinition.logingUnacademy.user_selects_country_code()'><b>user_selects_country_code</b><br>Test class: stepDefinition.logingUnacademy</td>
 <td></td>
-<td>13</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
+<td>7</td>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
 <tr>
-<td title='stepDefinition.logingUnacademy.user_redirected_to_enter_OTP()'><b>user_redirected_to_enter_OTP</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_selects_India_country_code()'><b>user_selects_India_country_code</b><br>Test class: stepDefinition.logingUnacademy</td>
+<td title='stepDefinition.logingUnacademy.user_should_be_able_to_login_successfully()'><b>user_should_be_able_to_login_successfully</b><br>Test class: stepDefinition.logingUnacademy</td>
 <td></td>
 <td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
-<tr>
-<td title='stepDefinition.logingUnacademy.user_selects_non_India_country_code()'><b>user_selects_non_India_country_code</b><br>Test class: stepDefinition.logingUnacademy</td>
-<td></td>
-<td>0</td>
-<td>stepDefinition.logingUnacademy@5db250b4</td></tr>
+<td>stepDefinition.logingUnacademy@61df66b6</td></tr>
 </table><p>
 </body>
 </html>

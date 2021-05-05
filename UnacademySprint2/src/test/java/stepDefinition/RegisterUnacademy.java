@@ -8,11 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import PageFactoryPOM.PageFactoryRegister;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-import pageBean.PageFactoryRegister;
 
 public class RegisterUnacademy {
 	WebDriver driver;
@@ -63,7 +62,7 @@ public class RegisterUnacademy {
 		pfr.createAccount();
 	    
 	}
-	@Test( priority=4)
+	/*@Test( priority=4)
 
 	@Then("User gets textfield to enter phone number for Register")
 	public void user_gets_textfield_to_enter_phone_number_for_register() throws Throwable {
@@ -73,19 +72,13 @@ public class RegisterUnacademy {
 	@Test( priority=5)
 	@Given("User is on registration page for Register")
 	public void user_is_on_registration_page_for_register() {
-		String title = driver.getTitle();
-		String expectedTitle = "Join Unacademy";
-	    Assert.assertEquals(title, expectedTitle);
-		  
-	      if(title.contentEquals("Join Unacademy")) {
-		  System.out.println("Title Matched. User on register home page"); } 
-		  else {
-		  System.out.println("Title NOT Matched."); }
+		
 	 
 	}
 	@Test
 	@When("User selects India country code for Register")
 	public void user_selects_india_country_code_for_register() {
+		
 	
 	}
 	@Test
@@ -167,5 +160,5 @@ public class RegisterUnacademy {
 	@Then("error message displayed in page")
 	public void error_message_displayed_in_page() {
 	  
-	}
+	}*/
 }

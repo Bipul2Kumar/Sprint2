@@ -1,4 +1,4 @@
-package pageBean;
+package PageFactoryPOM;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,26 +10,19 @@ public class PageFactoryLogin
 	WebDriver driver;
 	@FindBy(xpath="//button[contains(text(),'Login')]")
 	WebElement loginbutton;
-	@FindBy(xpath="//div[@class='CountryMenu__StyledSelectedMenu-sc-7z48zf-1 ihtqbR']//*[local-name()='svg']")
+	@FindBy(xpath="//p[@class='P1-llcrra-0 CountryMenu__BoldP1-sc-7z48zf-0 dEUMYL dlHJTQ']")
 	WebElement countrycode;
+	@FindBy(xpath="//span[@class='MenuItem__Label-sc-3auwg3-3 gAJfoK']")
+	WebElement selectCountry;
 	@FindBy(xpath="//input[@placeholder='Enter your mobile number']")
 	WebElement getNum;
 	@FindBy(css="button[class='Button__StyledButton-dg3jck-0 jerpTs']")
 	WebElement login;
+	
 	@FindBy(xpath="//input[@placeholder='One time password']")
 	WebElement otpNo;
 	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
 	WebElement logOtp;
-	/*@FindBy(xpath="//span[normalize-space()='India'")
-	WebElement selectCountry;
-	@FindBy(xpath="//h6[normalize-space()='Continue with email']")
-	WebElement loginbyemail;
-	@FindBy(xpath="//input[@placeholder='Email address']")
-	WebElement emailaddress;
-	@FindBy(css="button[class='Button__StyledButton-dg3jck-0 jerpTs EnterEmailStep__LoginButton-sc-1txz5a5-5 fRLyMV']")
-	WebElement clicklogin;
-	@FindBy(css="button[aria-label='Verify OTP']")
-	WebElement verifyotp;*/
 	public  PageFactoryLogin(WebDriver driver)
 	{
 		this.driver=driver;
@@ -37,17 +30,24 @@ public class PageFactoryLogin
 		
 		
 	}
-	public void setLoginButton() {
+	public void setLoginButton() throws Throwable {
 		loginbutton.click();
+		Thread.sleep(5000);
 	}
-	public void setCountryCode(){
+	public void setCountryCode() throws Throwable{
 		
-		countrycode.click();
+			countrycode.click();
 	}
-	public void getPhoneNo()
+	public void countryToSelect() throws Throwable
 	{
 		
-		getNum.sendKeys("8584994347");
+		selectCountry.click();
+	}
+	public void getPhoneNo(String numb)
+	{
+		
+		getNum.sendKeys(numb);
+		
 	}
 	public void loginPage()
 	{
@@ -56,7 +56,7 @@ public class PageFactoryLogin
 	public void otpNumber() throws Throwable
 	{
 		Thread.sleep(5000);
-		otpNo.sendKeys("215466");
+		otpNo.sendKeys();
 	}
 	public void loginOtp() throws Throwable
 	{

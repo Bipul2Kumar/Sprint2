@@ -5,9 +5,7 @@
     <classes>
       <class name="stepDefinition.logingUnacademy">
         <methods>
-          <include name="user_enters_an_invalid"/>
-          <include name="user_enters_invalid"/>
-          <include name="user_enters_valid"/>
+          <include name="user_should_enter_valid_otp"/>
         </methods>
       </class> <!-- stepDefinition.logingUnacademy -->
     </classes>
