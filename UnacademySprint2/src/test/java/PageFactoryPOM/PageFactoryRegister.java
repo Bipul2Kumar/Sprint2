@@ -8,51 +8,107 @@ import org.openqa.selenium.support.PageFactory;
 public class PageFactoryRegister 
 {
 	WebDriver driver;
-	
+
 	@FindBy(xpath="//button[contains(text(),'Login')]")
 	WebElement loginbutton;
-	@FindBy(css="h6[class='H6-sc-1gn2suh-0 EnterNumberStep__StyledH6-sc-17qxvlo-3 fNyXoW fUlspL']")
+	@FindBy(xpath="//h6[normalize-space()='create your account']")
 	WebElement creatAcc;
-	@FindBy(css="h2[class='H2-s1k28w-0 EnterNumberStep__Header-sc-17qxvlo-4 bKKwLD cabAav']")
-	WebElement title;
-			/*
-	 * 
-	 * @FindBy(className="MenuItem__Label-sc-3auwg3-3 gAJfoK") WebElement
-	 * countryCode;
-	 * 
-	 * @FindBy(css="input[placeholder='Enter your mobile number']") WebElement
-	 * fillNo;
-	 * 
-	 * @FindBy(css="button[aria-label='Continue']") WebElement continueB;
-	 * //@FindBy(xpath="//button[contains(text(),'Login')]") //WebElement
-	 * loginbutton;
-	 */	
+	@FindBy(css="p[class='P1-llcrra-0 CountryMenu__BoldP1-sc-7z48zf-0 dEUMYL dlHJTQ']")
+	WebElement countryIcon;
+	@FindBy(xpath="//span[@class='MenuItem__Label-sc-3auwg3-3 gAJfoK']") 
+	WebElement countryCode;
+	@FindBy(css="button[aria-label='Continue']")
+	WebElement continueButton;
+	@FindBy(css="input[placeholder='Enter your mobile number']") 
+	WebElement fillNo;
+	@FindBy(css="input[placeholder='One time password']")
+	WebElement enterOtp;
+	@FindBy(css="input[placeholder='Name']")
+	WebElement enterNam;
+	@FindBy(css="input[placeholder='Email address']")
+	WebElement enterEmail;
+	@FindBy(xpath="//button[normalize-space()='Select - State of residence']")
+	WebElement clickState;
+	@FindBy(xpath="//span[normalize-space()='Bihar']")
+	WebElement selectState;
+	@FindBy(css="button[aria-label='Submit']")
+	WebElement clickSubmit;
+	@FindBy(css="input[placeholder='Enter your mobile number']") 
+	WebElement InvalidNub;
+	@FindBy(css="input[placeholder='One time password']")
+	WebElement enterInvalidOtp;
 
 
-public  PageFactoryRegister(WebDriver driver)
-{
-	this.driver=driver;
-	PageFactory.initElements(driver, this);
-	
-	
-}
+
+
+	public  PageFactoryRegister(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+
+
+	}
 	public void loginButt() 
 	{
-	
+
 		loginbutton.click();
 	}
-	public void createAccount()
+	public void createAccount() throws Throwable
 	{
+		Thread.sleep(2000);
 		creatAcc.click();
 	}
-	public void titleVerify()
+	public void countryIconLink()
 	{
-		title.isDisplayed();
+		countryIcon.click();
 	}
-	/*
-	 * public void indiaCountryCode() { countryCode.click(); } public void
-	 * enterNumber() { fillNo.sendKeys("phone numbe"); } public void
-	 * continueButton() { continueB.click(); }
-	 */
+	public void CountryCode() throws Throwable 
+	{ 
+		Thread.sleep(2000);
+		countryCode.click(); 
+	} 
+	public void enterNumber() 
+	{ 
+		fillNo.sendKeys("9852745877");
+	}
+	public void eneterContinue()
+	{
+		continueButton.click();
+	}
+	public void enterOTP()
+	{
+		enterOtp.sendKeys("343434");
+	}
+	public void enterName() throws Throwable
 	
+	{
+		Thread.sleep(2000);
+		enterNam.sendKeys("Bipul Kumar");
+	}
+	public void enterEmailId()
+	{
+		enterEmail.sendKeys("bipul@gmail.com");
+	}
+	public void clickStateIcon()
+	{
+		clickState.click();
+	}
+	public void selectAnyState()
+	{
+		selectState.click();
+	}
+	public void clickSubmitButton()
+	{
+		clickSubmit.click();
+	}
+	public void invalidNumber(String InvalidNumber)
+	{
+		InvalidNub.sendKeys(InvalidNumber);
+	}
+	public void invalidOtp(String InvalidOtp)
+	{
+		enterInvalidOtp.sendKeys(InvalidOtp);
+	}
+	
+
 }

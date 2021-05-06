@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -36,6 +37,7 @@ public class logingUnacademy
 			 obj = PageFactory.initElements(driver,PageFactoryLogin.class );
 			
 			//loading website
+			 
 			driver.get("https://unacademy.com/");
 			
 			//maximizing browser
@@ -52,6 +54,7 @@ public class logingUnacademy
 			  else {
 			  System.out.println("Title NOT Matched."); }
 			  Thread.sleep(3000);
+			  obj.setLoginButton();
 			  
 				
 		
@@ -62,7 +65,7 @@ public class logingUnacademy
 	 @When("^User selects country code$")
 	 public void user_selects_country_code() throws Throwable 
 	 {
-		 obj.setLoginButton();
+		 
 		 obj.setCountryCode(); 
 		 obj.countryToSelect();
 		 Thread.sleep(2000);
@@ -107,5 +110,90 @@ public class logingUnacademy
 		 
 	     
 	 }
+	 @Test(priority=1)
+	 @When("^User selects country codes$")
+	 public void user_selects_country_codes() throws Throwable 
+	 {
+		 obj.setCountryCode(); 
+		 driver.findElement(By.xpath( "//span[normalize-space()='Bangladesh']") ).click();
+		 Thread.sleep(2000);
+	    
+	 }
+	 @Test(priority=2)
+	 @When("^User enters invalid phone number$")
+	 public void user_enters_invalid_phone_number() throws Throwable {
+		 obj = new PageFactoryLogin(driver);
+		 obj = PageFactory.initElements(driver,PageFactoryLogin.class );
+		
+		 
+		 File credentials = new File("G:\\SeleniumSoftware\\number.xlsx");
+			FileInputStream fis = new FileInputStream(credentials);
+			XSSFWorkbook wb = new XSSFWorkbook(fis);
+			XSSFSheet sheet1=wb.getSheetAt(0);
+			DataFormatter formatter = new DataFormatter();
+			String numb = formatter.formatCellValue(sheet1.getRow(1).getCell(0));
+			obj.getPhoneNo(numb);
+			Thread.sleep(20000);
+		 
+	    
+	 }
+	 @Test(priority=3)
+	 @When("^User clicks login button$")
+	 public void user_clicks_login_button() throws Throwable
+	 {
+		 obj.loginPage();
+	    
+	 }
+	 @Test(priority=4)
+	 @Then("^User get error message$")
+	 public void user_get_error_message() throws Throwable {
+	    
+	 }
+	 @Test(priority=1)
+	 @When("^User select any country code$")
+	 public void user_select_any_country_code() throws Throwable 
+	 {
+		 
+		 obj.setCountryCode(); 
+		 obj.countryToSelect();
+		 Thread.sleep(2000);
+	     
+	 }
+	 @Test(priority=2)
+	 @When("^User enters registered phone numbers$")
+	 public void user_enters_registered_phone_numbers() throws Throwable {
+		 File credentials = new File("G:\\SeleniumSoftware\\number.xlsx");
+			FileInputStream fis = new FileInputStream(credentials);
+			XSSFWorkbook wb = new XSSFWorkbook(fis);
+			XSSFSheet sheet1=wb.getSheetAt(0);
+			DataFormatter formatter = new DataFormatter();
+			String numb = formatter.formatCellValue(sheet1.getRow(0).getCell(0));
+			obj.getPhoneNo(numb);
+			Thread.sleep(20000);
+	 }
+	 @Test(priority=3)
+	 @When("^User clicks the login button$")
+	 public void user_clicks_the_login_button() throws Throwable {
+		 obj.loginPage();
+	    
+	 }
+	 @Test(priority=4)
+	 @When("^User should enter invalid otp$")
+	 public void user_should_enter_invalid_otp() throws Throwable {
+		 driver.findElement(By.cssSelector("input[placeholder='One time password']")).sendKeys("546756");
+		 obj.loginOtp();
+	 }
+	 @Test(priority=5)
+	 @Then("^User get an error message$")
+	 public void user_get_an_error_message() throws Throwable {
+	     
+	 }
 
 }
+
+
+	
+
+
+
+

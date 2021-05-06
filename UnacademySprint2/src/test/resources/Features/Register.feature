@@ -1,66 +1,39 @@
 Feature: Registration
 
+Background: User is on the Unacademy Home_Page
+Given User is on a Registration Page
+ 
+
 @first
-Scenario: Verification of Login button for Register
-	Given User is on Unacademy home page for Register
-	When User clicks on Login button for Register
-	And User clicks on create your account link for Register
-	Then User gets textfield to enter phone number for Register
+Scenario: Successfull registration by valid inputs
+When User select the Country_Code 
+When User enter valid phone number
+And User enter valid Otp
+And User enter all others values
+And User click on submit button
+Then User should able to successfully registered
 
 @second
-Scenario Outline: Verification of phone number field with invalid inputs for Register
-	Given User is on registration page for Register
-	When User selects India country code for Register
-	When User enters invalid <phone number> and clicks Continue button for Register
-	Then error is message displayed in page
-	
-	Examples:
-		|phone number|
-		|94973232188|
-		|949732321|
-		|0000000000|
+Scenario Outline:  Unsuccessfull registration by Invalid Phone Number
+When User select Country_Code 
+When User enter invalid phone number <InvalidNumber>
+And User click on continue link
+Then User should get an error messages
 
+Examples:
+| InvalidNumber |
+| 56546         |
+| 72747          |
 
 @third
-Scenario Outline: Verification of phone number field with invalid inputs for non India
-	Given User is on registration page of Unacademy
-	When User select non-India country code 
-	And User enters invalid number "<phone number>"
-	And User clicks on continue button
-	Then error message display
+Scenario Outline: Unsuccessfull registration by Invalid Otp
+When User select the Country_Code 
+When User enter the correct phone number
+And User enter Invalid Otp <InvalidOtp>
+And User enter the all other values
+And User click on  the submit button
+Then User get error message invalid otp
 
-	Examples:
-		|phone number|
-		|213436550567890|
-		|21343|
-		
-@fourth
-Scenario: Successful Verification of phone number field for register
-	Given User is on registration page for registration
-	When User enter valid phone number 
-	And clicks continue
-	Then User displayed OTP field for otp
-	
-
-
-	
-@fifth
-Scenario Outline: Verification of invalid OTP
-	Given User is on verify OTP page
-	When User enters an invalid otp  "<OTP>"
-	And enter all other value
-	When User click on the submit button
-	Then error message displayed in page
-	
-	Examples:
-	|OTP|
-	|6228|
-	|622878654|
-	
-	
-
-
-	
-
-
-	
+Examples:
+| InvalidOtp |
+| 565644     |

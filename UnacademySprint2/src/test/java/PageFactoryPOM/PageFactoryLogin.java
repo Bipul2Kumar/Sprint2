@@ -23,6 +23,19 @@ public class PageFactoryLogin
 	WebElement otpNo;
 	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
 	WebElement logOtp;
+	
+	@FindBy(xpath="//h6[normalize-space()='Continue with email']")
+	WebElement contWithEmail ;
+	@FindBy(css="input[placeholder='Email address']")
+	WebElement enterEmail;
+	@FindBy(css="button[class='Button__StyledButton-dg3jck-0 jerpTs EnterEmailStep__LoginButton-sc-1txz5a5-5 fRLyMV']")
+	WebElement emailLoginButton;
+	@FindBy(xpath="//input[@placeholder='One time password']")
+	WebElement enterOtp;
+	@FindBy(css="button[aria-label='Verify OTP']")
+	WebElement verifyOtp;
+	@FindBy(xpath="//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']")
+	WebElement errors;
 	public  PageFactoryLogin(WebDriver driver)
 	{
 		this.driver=driver;
@@ -63,8 +76,38 @@ public class PageFactoryLogin
 		Thread.sleep(5000);
 		logOtp.click();
 	}
+	public void byEmail()
+	{
+		contWithEmail.click();
+	}
+	public void enterEmailId()
+	{
+		enterEmail.sendKeys("bipul161616@gmail.com");
 		
 	}
+	public void logButton()
+	{
+		emailLoginButton.click();
+	}
+	public void otpEnter() throws Throwable
+	{
+		enterOtp.sendKeys("");
+	}
+	public void verifyTheOtp() throws Throwable
+	
+	{
+		Thread.sleep(20000);
+		verifyOtp.click();
+	}
+	public void errorMessage()
+	{
+		
+		errors.getText();
+	}
+	
+	
+		
+}
 	
 	
 	

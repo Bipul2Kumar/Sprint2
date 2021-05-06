@@ -1,0 +1,200 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User is on the Unacademy Home_Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21734137385,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on a Registration Page",
+            "match": {
+              "location": "RegisterUnacademy.user_is_on_a_Registration_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Unsuccessfull registration by Invalid Phone Number",
+        "description": "",
+        "id": "registration;unsuccessfull-registration-by-invalid-phone-number;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2363620662,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User select Country_Code",
+            "match": {
+              "location": "RegisterUnacademy.user_select_Country_Code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 498743904,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter invalid phone number 56546",
+            "match": {
+              "arguments": [
+                {
+                  "val": "56546",
+                  "offset": 32
+                }
+              ],
+              "location": "RegisterUnacademy.user_enter_invalid_phone_number(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72824785,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on continue link",
+            "match": {
+              "location": "RegisterUnacademy.user_click_on_continue_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 456808236,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should get an error messages",
+            "match": {
+              "location": "RegisterUnacademy.user_should_get_an_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@second"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User is on the Unacademy Home_Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14435876900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on a Registration Page",
+            "match": {
+              "location": "RegisterUnacademy.user_is_on_a_Registration_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Unsuccessfull registration by Invalid Phone Number",
+        "description": "",
+        "id": "registration;unsuccessfull-registration-by-invalid-phone-number;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2384079066,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User select Country_Code",
+            "match": {
+              "location": "RegisterUnacademy.user_select_Country_Code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 516224895,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter invalid phone number 72747",
+            "match": {
+              "arguments": [
+                {
+                  "val": "72747",
+                  "offset": 32
+                }
+              ],
+              "location": "RegisterUnacademy.user_enter_invalid_phone_number(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91355993,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on continue link",
+            "match": {
+              "location": "RegisterUnacademy.user_click_on_continue_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 380617927,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should get an error messages",
+            "match": {
+              "location": "RegisterUnacademy.user_should_get_an_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@second"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Register.feature"
+  }
+]
