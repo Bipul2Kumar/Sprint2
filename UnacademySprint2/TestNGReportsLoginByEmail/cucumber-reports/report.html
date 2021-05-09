@@ -34,7 +34,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 9, 2021 10:06:58 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 9, 2021 09:06:54 PM</span>
 				</a>
 			</li>
 			<li>
@@ -74,7 +73,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -87,10 +85,10 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@LoginByNumber</a></li>
+					<li><a href='#'>@login</a></li>
 					<li><a href='#'>@first</a></li>
 					<li><a href='#'>@second</a></li>
-					<li><a href='#'>@Third</a></li>
+					<li><a href='#'>@third</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,10 +136,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -153,10 +151,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -168,10 +166,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='94.444%'><span class='strong'>17</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>19</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='5.556%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -185,28 +183,28 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login</span>
-						<span class='test-time'>May 9, 2021 10:06:58 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Login by Email</span>
+						<span class='test-time'>May 9, 2021 09:06:54 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@first</span>
 	</div>
-	<span class='duration right label'>0h 0m 42s+518ms</span>
+	<span class='duration right label'>0h 0m 42s+312ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Successful login with valid phone number</span>
+		<span class="desc-text">Successful login with valid email</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given User is on login page</span>
+			<span class="bdd-step-name">Given User is on a login page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -214,7 +212,7 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User selects country code</span>
+			<span class="bdd-step-name">When User click continue with emails</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -222,7 +220,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters registered phone number</span>
+			<span class="bdd-step-name">And User should enters registered email</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -230,7 +228,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User click login button</span>
+			<span class="bdd-step-name">And User clicks login buttons</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -238,7 +236,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User should enter valid otp</span>
+			<span class="bdd-step-name">And User should  enter the valid otp</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -246,7 +244,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And click on verify otp button</span>
+			<span class="bdd-step-name">And User click the verify otp buttons</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -254,27 +252,27 @@
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User should be able to login successfully</span>
+			<span class="bdd-step-name">Then User should be able to login</span>
 				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='fail'>
+<div class='scenario node' test-id='10' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@second</span>
 	</div>
-	<span class='duration right label'>0h 0m 49s+358ms</span>
+	<span class='duration right label'>0h 0m 18s+710ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">UnSuccessful login with invalid phone number</span>
+		<span class="desc-text">Unsuccessful login with invalid email</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='11' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given User is on login page</span>
+			<span class="bdd-step-name">Given User is on a login page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -282,7 +280,7 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User selects country codes</span>
+			<span class="bdd-step-name">When User click continue with email</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -290,7 +288,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters invalid phone number</span>
+			<span class="bdd-step-name">And User should enters invalid email</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -298,61 +296,35 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User clicks login button</span>
+			<span class="bdd-step-name">And User clicks login</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='15' class='node then fail' status='fail'>
+		<li test-id='15' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User get error message</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MEL20CT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd654cd2a887c56f493e2366cb677549
-*** Element info: {Using=xpath, value=//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.LoginByNumber.user_get_error_message(LoginByNumber.java:166)
-	at ?.Then User get error message(src/test/resources/Features/LoginByNumber.feature:21)
-</pre></div>
+			<span class="bdd-step-name">Then User should get error message</span>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='16' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@Third</span>
+		<span class='category label white-text'>@third</span>
 	</div>
-	<span class='duration right label'>0h 0m 59s+177ms</span>
+	<span class='duration right label'>0h 0m 40s+356ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">UnSuccessful login with invalid otp</span>
+		<span class="desc-text">Unsuccessful login with valid email and invalid otp</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='17' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given User is on login page</span>
+			<span class="bdd-step-name">Given User is on a login page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -360,7 +332,7 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User select any country code</span>
+			<span class="bdd-step-name">When User click continue with the emailId</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -368,7 +340,7 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters registered phone numbers</span>
+			<span class="bdd-step-name">And User should enters valid email</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -376,7 +348,7 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User clicks the login button</span>
+			<span class="bdd-step-name">And User should  clicks login buttons</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -384,15 +356,23 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User should enter invalid otp</span>
+			<span class="bdd-step-name">And User should enter the invalid otp</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='22' class='node then pass' status='pass'>
+		<li test-id='22' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks the verify otp buttons</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User get an error message</span>
+			<span class="bdd-step-name">Then User will get error message</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -452,15 +432,15 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@LoginByNumber</span>
+						<span class='category-name'>@login</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -475,9 +455,9 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 10:06:58 PM</td>
-										<td class='linked' test-id='1'>Login</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>May 9, 2021 09:06:54 PM</td>
+										<td class='linked' test-id='1'>Login by Email</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -509,8 +489,8 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 10:06:58 PM</td>
-										<td class='linked' test-id='2'>Login.Successful login with valid phone number</td>
+										<td>May 9, 2021 09:06:54 PM</td>
+										<td class='linked' test-id='2'>Login by Email.Successful login with valid email</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -521,40 +501,6 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 				<li class='category displayed active'>
 					<div class='category-heading'>
 						<span class='category-name'>@second</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 10:07:41 PM</td>
-										<td class='linked' test-id='10'>Login.UnSuccessful login with invalid phone number</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Third</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -577,8 +523,42 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 10:08:30 PM</td>
-										<td class='linked' test-id='16'>Login.UnSuccessful login with invalid otp</td>
+										<td>May 9, 2021 09:07:36 PM</td>
+										<td class='linked' test-id='10'>Login by Email.Unsuccessful login with invalid email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@third</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 9, 2021 09:07:55 PM</td>
+										<td class='linked' test-id='16'>Login by Email.Unsuccessful login with valid email and invalid otp</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -598,93 +578,6 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>May 9, 2021 10:08:20 PM</td>
-                                                        <td class='linked' test-id='15'>Login.UnSuccessful login with invalid phone number.Then User get error message</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MEL20CT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd654cd2a887c56f493e2366cb677549
-*** Element info: {Using=xpath, value=//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.LoginByNumber.user_get_error_message(LoginByNumber.java:166)
-	at ?.Then User get error message(src/test/resources/Features/LoginByNumber.feature:21)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -706,25 +599,25 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>19</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 9, 2021 10:06:58 PM</div>
+					<div class='panel-lead'>May 9, 2021 09:06:54 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 9, 2021 10:09:29 PM</div>
+			 		<div class='panel-lead'>May 9, 2021 09:08:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>151,388ms</div>
+					<div class='panel-lead'>101,793ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -740,12 +633,12 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@LoginByNumber</td>
-							<td>0</td>
+							<td>@login</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
@@ -759,15 +652,15 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 						</tr>
 						<tr>
 							<td>@second</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@Third</td>
+							<td>@third</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -788,31 +681,31 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 2,
-				failChild: 1,
+				passChild: 3,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 17,
-				failGrandChild: 1,
+				passGrandChild: 19,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

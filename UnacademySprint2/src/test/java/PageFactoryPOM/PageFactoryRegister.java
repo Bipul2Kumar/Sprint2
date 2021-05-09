@@ -77,7 +77,7 @@ public class PageFactoryRegister
 	}
 	public void enterOTP()
 	{
-		enterOtp.sendKeys("343434");
+		enterOtp.sendKeys("");
 	}
 	public void enterName() throws Throwable
 	

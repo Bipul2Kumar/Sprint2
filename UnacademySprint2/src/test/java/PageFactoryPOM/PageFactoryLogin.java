@@ -18,7 +18,6 @@ public class PageFactoryLogin
 	WebElement getNum;
 	@FindBy(css="button[class='Button__StyledButton-dg3jck-0 jerpTs']")
 	WebElement login;
-	
 	@FindBy(xpath="//input[@placeholder='One time password']")
 	WebElement otpNo;
 	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
@@ -68,12 +67,12 @@ public class PageFactoryLogin
 	}
 	public void otpNumber() throws Throwable
 	{
-		Thread.sleep(5000);
-		otpNo.sendKeys();
+		
+		otpNo.sendKeys("");
 	}
 	public void loginOtp() throws Throwable
 	{
-		Thread.sleep(5000);
+		Thread.sleep(20000);
 		logOtp.click();
 	}
 	public void byEmail()

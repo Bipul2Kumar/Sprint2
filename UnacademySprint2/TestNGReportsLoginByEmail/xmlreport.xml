@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="101.176582">
+<testcase classname="Login by Email" name="Successful login with valid email" time="42.146591">
+<system-out><![CDATA[Given User is on a login page...............................................passed
+When User click continue with emails........................................passed
+And User should enters registered email.....................................passed
+And User clicks login buttons...............................................passed
+And User should  enter the valid otp........................................passed
+And User click the verify otp buttons.......................................passed
+Then User should be able to login...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login by Email" name="Unsuccessful login with invalid email" time="18.694156">
+<system-out><![CDATA[Given User is on a login page...............................................passed
+When User click continue with email.........................................passed
+And User should enters invalid email........................................passed
+And User clicks login.......................................................passed
+Then User should get error message..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login by Email" name="Unsuccessful login with valid email and invalid otp" time="40.335835">
+<system-out><![CDATA[Given User is on a login page...............................................passed
+When User click continue with the emailId...................................passed
+And User should enters valid email..........................................passed
+And User should  clicks login buttons.......................................passed
+And User should enter the invalid otp.......................................passed
+And User clicks the verify otp buttons......................................passed
+Then User will get error message............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

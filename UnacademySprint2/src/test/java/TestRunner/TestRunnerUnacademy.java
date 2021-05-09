@@ -6,13 +6,15 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
  
 
 @CucumberOptions
-(features= "src/test/resources/Features/Register.feature",
-glue= {"stepDefinition"},
-tags= {"@third"}
-//plugin= {"pretty","html:TestNGReports1/htmlreport",
-	//	"json:TestNGReports1/jsonreport.json",
-	//	"junit:TestNGReports1/xmlreport.xml",
-	//	"com.cucumber.listener.ExtentCucumberFormatter:TestNGReports1/cucumber-reports/report.html"}
+
+//(features= "src/test/resources/Features/LoginByEmail.feature",glue= {"stepDefinition"},
+(features= "src/test/resources/Features/LoginByNumber.feature",glue= {"stepDefinition"},
+//(features= "src/test/resources/Features/Register.feature",glue= {"stepDefinition"},
+tags= {"@LoginByNumber"},
+plugin= {"pretty","html:TestNGReports/htmlreport",
+		"json:TestNGReports/jsonreport.json",
+		"junit:TestNGReports/xmlreport.xml",
+		"com.cucumber.listener.ExtentCucumberFormatter:TestNGReports/cucumber-reports/report.html"}
 		
 
 		)

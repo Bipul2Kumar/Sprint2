@@ -4,6 +4,29 @@
   <artifactId>UnacademyTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+		<cucumber.version>4.2.0</cucumber.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M1</version>
+				<configuration>
+					<parallel>methods</parallel>
+					<threadCount>4</threadCount>
+					 <perCoreThreadCount>false</perCoreThreadCount>
+					<!-- <useUnlimitedThreads>true</useUnlimitedThreads>-->
+					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

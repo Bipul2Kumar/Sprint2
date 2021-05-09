@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="stepDefinition.RegisterUnacademy">
+      <class name="TestRunner.TestRunnerUnacademy">
         <methods>
-          <include name="user_click_on_submit_button"/>
-          <include name="user_enter_invalid_phone_number"/>
-          <include name="user_enter_Invalid_Otp"/>
-          <include name="user_enter_all_others_values"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- stepDefinition.RegisterUnacademy -->
+      </class> <!-- TestRunner.TestRunnerUnacademy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

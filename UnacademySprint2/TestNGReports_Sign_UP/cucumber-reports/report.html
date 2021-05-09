@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 9, 2021 10:06:58 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 9, 2021 09:20:10 PM</span>
 				</a>
 			</li>
 			<li>
@@ -87,10 +87,10 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@LoginByNumber</a></li>
+					<li><a href='#'>@registration</a></li>
 					<li><a href='#'>@first</a></li>
 					<li><a href='#'>@second</a></li>
-					<li><a href='#'>@Third</a></li>
+					<li><a href='#'>@third</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -153,10 +153,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -168,10 +168,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='94.444%'><span class='strong'>17</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='91.667%'><span class='strong'>22</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='5.556%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -187,26 +187,26 @@
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login</span>
-						<span class='test-time'>May 9, 2021 10:06:58 PM</span>
+						<span class='test-name'>Registration</span>
+						<span class='test-time'>May 9, 2021 09:20:10 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@first</span>
 	</div>
-	<span class='duration right label'>0h 0m 42s+518ms</span>
+	<span class='duration right label'>0h 0m 51s+296ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Successful login with valid phone number</span>
+		<span class="desc-text">Successfull registration by valid inputs</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given User is on login page</span>
+			<span class="bdd-step-name">Given User is on a Registration Page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -214,15 +214,15 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User selects country code</span>
+			<span class="bdd-step-name">When User select the Country_Code</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='5' class='node and pass' status='pass'>
+		<li test-id='5' class='node when pass' status='pass'>
 			
-			<b>And</b>
+			<b>When</b>
 			
-			<span class="bdd-step-name">And User enters registered phone number</span>
+			<span class="bdd-step-name">When User enter valid phone number</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -230,7 +230,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User click login button</span>
+			<span class="bdd-step-name">And User enter valid Otp</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -238,7 +238,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User should enter valid otp</span>
+			<span class="bdd-step-name">And User enter all others values</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -246,75 +246,90 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And click on verify otp button</span>
+			<span class="bdd-step-name">And User click on submit button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node then pass' status='pass'>
+		<li test-id='9' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User should be able to login successfully</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='10' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@second</span>
-	</div>
-	<span class='duration right label'>0h 0m 49s+358ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">UnSuccessful login with invalid phone number</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='11' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on login page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='12' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User selects country codes</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='13' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User enters invalid phone number</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='14' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User clicks login button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='15' class='node then fail' status='fail'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User get error message</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']"}
+			<span class="bdd-step-name">Then User should able to successfully registered</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[normalize-space()='Confirm your email:']"}
   (Session info: chrome=90.0.4430.93)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-MEL20CT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd654cd2a887c56f493e2366cb677549
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d2b50c56ad082934f3760f007f778fe
+*** Element info: {Using=xpath, value=//h5[normalize-space()='Confirm your email:']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinition.RegisterUnacademy.user_should_able_to_successfully_registered(RegisterUnacademy.java:100)
+	at ?.Then User should able to successfully registered(src/test/resources/Features/Register.feature:16)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='10' status='fail'>
+	<span class='duration right label'>0h 0m 41s+364ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Unsuccessfull registration by Invalid Phone Number</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='11' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@registration</span>
+				<span class='category label white-text'>@second</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Unsuccessfull registration by Invalid Phone Number</span>
+			
+				<ul class='steps'>
+					<li test-id='12' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on a Registration Page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User select Country_Code</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enter invalid phone number 727471154552</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User click on continue link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node then fail' status='fail'><b>Then</b>
+						<span class="bdd-step-name">Then User should get an error messages</span>
+							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']"}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MEL20CT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 219352f260d2d54995b8ec4875340a5a
 *** Element info: {Using=xpath, value=//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -331,70 +346,94 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.LoginByNumber.user_get_error_message(LoginByNumber.java:166)
-	at ?.Then User get error message(src/test/resources/Features/LoginByNumber.feature:21)
+	at stepDefinition.RegisterUnacademy.user_should_get_an_error_messages(RegisterUnacademy.java:138)
+	at ?.Then User should get an error messages(src/test/resources/Features/Register.feature:23)
 </pre></div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='17' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@registration</span>
+				<span class='category label white-text'>@second</span>
+			</div>
 			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Unsuccessfull registration by Invalid Phone Number</span>
+			
+				<ul class='steps'>
+					<li test-id='18' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on a Registration Page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='19' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User select Country_Code</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enter invalid phone number 46646</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User click on continue link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should get an error messages</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='16' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@Third</span>
-	</div>
-	<span class='duration right label'>0h 0m 59s+177ms</span>
+<div class='scenariooutline node' test-id='23' status='pass'>
+	<span class='duration right label'>0h 0m 22s+951ms</span>
 	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">UnSuccessful login with invalid otp</span>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Unsuccessfull registration by Invalid Otp</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='17' class='node given pass' status='pass'>
+		<li test-id='24' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@registration</span>
+				<span class='category label white-text'>@third</span>
+			</div>
 			
-			<b>Given</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Given User is on login page</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">Unsuccessfull registration by Invalid Otp</span>
 			
-		</li>
-		<li test-id='18' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User select any country code</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='19' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User enters registered phone numbers</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='20' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User clicks the login button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='21' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User should enter invalid otp</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='22' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User get an error message</span>
-				<div class='pre'>passed</div>
-			
+				<ul class='steps'>
+					<li test-id='25' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on a Registration Page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User select the Country_Code</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enter the correct phone number</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enter Invalid Otp 565644</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enter the all other values</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='30' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User click on  the submit button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='31' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User get error message invalid otp</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
 	</ul>
 </div>
@@ -452,15 +491,16 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@LoginByNumber</span>
+						<span class='category-name'>@registration</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>2</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -475,9 +515,24 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 10:06:58 PM</td>
-										<td class='linked' test-id='1'>Login</td>
+										<td>May 9, 2021 09:20:10 PM</td>
+										<td class='linked' test-id='1'>Registration</td>
 										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 9, 2021 09:21:02 PM</td>
+										<td class='linked' test-id='11'>Registration.Unsuccessfull registration by Invalid Phone Number.Unsuccessfull registration by Invalid Phone Number</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 9, 2021 09:21:28 PM</td>
+										<td class='linked' test-id='17'>Registration.Unsuccessfull registration by Invalid Phone Number.Unsuccessfull registration by Invalid Phone Number</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 9, 2021 09:21:43 PM</td>
+										<td class='linked' test-id='24'>Registration.Unsuccessfull registration by Invalid Otp.Unsuccessfull registration by Invalid Otp</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -488,40 +543,6 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 					<div class='category-heading'>
 						<span class='category-name'>@first</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 10:06:58 PM</td>
-										<td class='linked' test-id='2'>Login.Successful login with valid phone number</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@second</span>
-						<span class='category-status right'>
 							<span class='label fail'>1</span>
 						</span>
 					</div>
@@ -543,8 +564,8 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 10:07:41 PM</td>
-										<td class='linked' test-id='10'>Login.UnSuccessful login with invalid phone number</td>
+										<td>May 9, 2021 09:20:10 PM</td>
+										<td class='linked' test-id='2'>Registration.Successfull registration by valid inputs</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -554,7 +575,47 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Third</span>
+						<span class='category-name'>@second</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 9, 2021 09:21:02 PM</td>
+										<td class='linked' test-id='11'>Registration.Unsuccessfull registration by Invalid Phone Number.Unsuccessfull registration by Invalid Phone Number</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 9, 2021 09:21:28 PM</td>
+										<td class='linked' test-id='17'>Registration.Unsuccessfull registration by Invalid Phone Number.Unsuccessfull registration by Invalid Phone Number</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@third</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -577,8 +638,8 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 10:08:30 PM</td>
-										<td class='linked' test-id='16'>Login.UnSuccessful login with invalid otp</td>
+										<td>May 9, 2021 09:21:43 PM</td>
+										<td class='linked' test-id='24'>Registration.Unsuccessfull registration by Invalid Otp.Unsuccessfull registration by Invalid Otp</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -626,7 +687,7 @@ Session ID: dd654cd2a887c56f493e2366cb677549
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -640,16 +701,47 @@ Session ID: dd654cd2a887c56f493e2366cb677549
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>May 9, 2021 10:08:20 PM</td>
-                                                        <td class='linked' test-id='15'>Login.UnSuccessful login with invalid phone number.Then User get error message</td>
+                                                        <td>May 9, 2021 09:20:51 PM</td>
+                                                        <td class='linked' test-id='9'>Registration.Successfull registration by valid inputs.Then User should able to successfully registered</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[normalize-space()='Confirm your email:']"}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MEL20CT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d2b50c56ad082934f3760f007f778fe
+*** Element info: {Using=xpath, value=//h5[normalize-space()='Confirm your email:']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinition.RegisterUnacademy.user_should_able_to_successfully_registered(RegisterUnacademy.java:100)
+	at ?.Then User should able to successfully registered(src/test/resources/Features/Register.feature:16)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 9, 2021 09:21:18 PM</td>
+                                                        <td class='linked' test-id='16'>Registration.Unsuccessfull registration by Invalid Phone Number.Unsuccessfull registration by Invalid Phone Number.Then User should get an error messages</td>
                                                         <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']"}
   (Session info: chrome=90.0.4430.93)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-MEL20CT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd654cd2a887c56f493e2366cb677549
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 219352f260d2d54995b8ec4875340a5a
 *** Element info: {Using=xpath, value=//p[@class='TextField__StyledP2-sc-17ki4o0-0 huYVfv']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -666,8 +758,8 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.LoginByNumber.user_get_error_message(LoginByNumber.java:166)
-	at ?.Then User get error message(src/test/resources/Features/LoginByNumber.feature:21)
+	at stepDefinition.RegisterUnacademy.user_should_get_an_error_messages(RegisterUnacademy.java:138)
+	at ?.Then User should get an error messages(src/test/resources/Features/Register.feature:23)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -700,31 +792,31 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>24</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 9, 2021 10:06:58 PM</div>
+					<div class='panel-lead'>May 9, 2021 09:20:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 9, 2021 10:09:29 PM</div>
+			 		<div class='panel-lead'>May 9, 2021 09:22:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>151,388ms</div>
+					<div class='panel-lead'>116,008ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -740,25 +832,16 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@LoginByNumber</td>
-							<td>0</td>
-							<td>1</td>
+							<td>@registration</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 						<tr>
 							<td>@first</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@second</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -767,7 +850,16 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 							</td>
 						</tr>
 						<tr>
-							<td>@Third</td>
+							<td>@second</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>@third</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -797,22 +889,22 @@ Session ID: dd654cd2a887c56f493e2366cb677549
 				exceptionsParent: 1,
 				
 				passChild: 2,
-				failChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
-				passGrandChild: 17,
-				failGrandChild: 1,
+				passGrandChild: 22,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		

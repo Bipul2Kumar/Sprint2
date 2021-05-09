@@ -1,3 +1,5 @@
+
+@registration
 Feature: Registration
 
 Background: User is on the Unacademy Home_Page
@@ -22,8 +24,8 @@ Then User should get an error messages
 
 Examples:
 | InvalidNumber |
-| 56546         |
-| 72747          |
+| 727471154552  |
+|    46646      |
 
 @third
 Scenario Outline: Unsuccessfull registration by Invalid Otp
@@ -37,3 +39,5 @@ Then User get error message invalid otp
 Examples:
 | InvalidOtp |
 | 565644     |
+
+

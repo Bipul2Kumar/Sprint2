@@ -1,4 +1,4 @@
-
+@LoginByNumber
 Feature: Login
 
 Background: User is on Unacademy home page
